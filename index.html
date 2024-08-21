@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YachtJet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container container-header">
+        <div class="header-wrap">
+          <a class="header-logo" href="./index.html"><span>yachtjet</span></a>
+
+          <nav class="header-nav">
+            <ul class="header-nav-menu">
+              <li class="header-nav-menu-item">
+                <a class="header-nav-link" href="#about">About</a>
+              </li>
+              <li class="header-nav-menu-item">
+                <a class="header-nav-link" href="#yachts">Yachts</a>
+              </li>
+              <li class="header-nav-menu-item">
+                <a class="header-nav-link" href="#reviews">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-social-list">
+            <li>
+              <a
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+                class="header-social-link"
+              >
+                <svg class="header-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+                class="header-social-link"
+              >
+                <svg class="header-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+                class="header-social-link"
+              >
+                <svg class="header-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <button
+            class="header-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="28" height="28">
+              <use href="./img/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container container-hero">
+          <h1 class="hero-title">
+            Explore the High Seas with Our Luxury Yacht Rentals
+          </h1>
+          <p class="hero-text">
+            Experience the freedom and luxury of yachting on the open seas.
+            Choose from our top-of-the-line yachts and embark on an
+            unforgettable journey surrounded by breathtaking views and
+            state-of-the-art amenities.
+          </p>
+          <a class="hero-link" href="#rental">Yacht rental</a>
+        </div>
+      </section>
+
+      <section class="about-page" id="about">
+        <div class="container about-container">
+          <div class="about-page-discr">
+            <h2 class="about-page-title">
+              YachtJet fleet is here to take you on the ultimate adventure
+            </h2>
+            <div class="about-page-text">
+              <h3 class="about-subtitle">
+                From spacious decks to state-of-the-art technology, our yachts
+                are designed to provide the perfect blend of luxury and
+                functionality.
+              </h3>
+              <p class="about-text">
+                Take a look at our selection below and choose the yacht that
+                matches your needs and preferences.No matter which yacht you
+                choose, our experienced crew will ensure that your journey is
+                smooth and enjoyable. Book now and get ready for an
+                unforgettable adventure on the high seas.
+              </p>
+            </div>
+          </div>
+
+          <picture class="about-img-container">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/desktop_1440/about-us-x1.jpg 1x,
+                ./img/desktop_1440/about-us-x2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/desktop_1280/about-us-x1.jpg 1x,
+                ./img/desktop_1280/about-us-x2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/tablet/about-us-x1.jpg 1x,
+                ./img/tablet/about-us-x2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/mobile/about-us-x1.jpg 1x,
+                ./img/mobile/about-us-x2.jpg 2x
+              "
+            />
+            <img
+              class="about-image"
+              src="./img/desktop_1440/about-us-x1.jpg"
+              alt="Yacht"
+              width="1340"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="yacht-page" id="yachts">
+        <div class="container container-yachts">
+          <h2 class="container-title-yachts">
+            Choose your dream yacht and sail away into the sunset
+          </h2>
+          <ul class="list-our-yachts">
+            <li class="list-our-yachts-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop_1440/yaht-arrow-x1.jpg 1x,
+                    ./img/desktop_1440/yaht-arrow-x2.jpg 2x
+                  "
+                  media="(min-width:1440px)"
+                />
+                <source
+                  srcset="
+                    ./img/desktop_1280/yaht-arrow-x1.jpg 1x,
+                    ./img/desktop_1280/yaht-arrow-x2.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/yaht-arrow-x1.jpg 1x,
+                    ./img/tablet/yaht-arrow-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/yaht-arrow-x1.jpg 1x,
+                    ./img/mobile/yaht-arrow-x2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="yachts-img"
+                  src="./img/desktop_1440/yaht-arrow-x1.jpg"
+                  alt="ARROW"
+                  width="360"
+                />
+              </picture>
+              <div class="container-discr-yachts">
+                <h3 class="container-discr-yachts-subtitle">Arrow</h3>
+                <p class="container-discr-yachts-text">LUXURY YAHTS</p>
+              </div>
+              <div class="decor-div"></div>
+              <div class="container-list-our-yachts">
+                <ul class="list-class-our-yachts">
+                  <li class="list-class-our-yachts-item">LENGTH</li>
+                  <li class="list-class-our-yachts-item">BUILDER</li>
+                  <li class="list-class-our-yachts-item">BUILT</li>
+                  <li class="list-class-our-yachts-item">GUESTS</li>
+                  <li class="list-class-our-yachts-item">PRICE</li>
+                </ul>
+                <ul class="list-class-our-yachts">
+                  <li class="list-class-yachts-item">48m(155ft)</li>
+                  <li class="list-class-yachts-item">Admiral</li>
+                  <li class="list-class-yachts-item">2021</li>
+                  <li class="list-class-yachts-item">11 in 5 cabins</li>
+                  <li class="list-class-yachts-item">€33,500,000</li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-our-yachts-item list-yahts-two">
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop_1440/yaht-benetti-x1.jpg 1x,
+                    ./img/desktop_1440/yaht-benetti-x2.jpg 2x
+                  "
+                  media="(min-width:1440px)"
+                />
+                <source
+                  srcset="
+                    ./img/desktop_1280/yaht-benetti-x1.jpg 1x,
+                    ./img/desktop_1280/yaht-benetti-x2.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/yaht-benetti-x1.jpg 1x,
+                    ./img/tablet/yaht-benetti-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/yaht-benetti-x1.jpg 1x,
+                    ./img/mobile/yaht-benetti-x2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="yachts-img"
+                  src="./img/desktop_1440/yaht-benetti-x1.jpg"
+                  alt="BENETTI OASIS 40M BO"
+                  width="360"
+                />
+              </picture>
+              <div class="container-discr-yachts">
+                <h3 class="container-discr-yachts-subtitle yaht-benetti">
+                  BENETTI OASIS 40M BO122
+                </h3>
+                <p class="container-discr-yachts-text">LUXURY YAHTS</p>
+              </div>
+              <div class="decor-div"></div>
+              <div class="container-list-our-yachts">
+                <ul class="list-class-our-yachts">
+                  <li class="list-class-our-yachts-item">LENGTH</li>
+                  <li class="list-class-our-yachts-item">SHIPYARD</li>
+                  <li class="list-class-our-yachts-item">BUILT</li>
+                  <li class="list-class-our-yachts-item">GUESTS</li>
+                  <li class="list-class-our-yachts-item">PRICE</li>
+                </ul>
+                <ul class="list-class-our-yachts">
+                  <li class="list-class-yachts-item">41m (133ft)</li>
+                  <li class="list-class-yachts-item">Benetti</li>
+                  <li class="list-class-yachts-item">2025</li>
+                  <li class="list-class-yachts-item">10 in 5 cabins</li>
+                  <li class="list-class-yachts-item">€23,210,000</li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-our-yachts-item list-yachts-tree">
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop_1440/yaht-belle-anna-x1.jpg 1x,
+                    ./img/desktop_1440/yaht-belle-anna-x2.jpg 2x
+                  "
+                  media="(min-width:1440px)"
+                />
+                <source
+                  srcset="
+                    ./img/desktop_1280/yaht-belle-anna-x1.jpg 1x,
+                    ./img/desktop_1280/yaht-belle-anna-x2.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/yaht-belle-anna-x1.jpg 1x,
+                    ./img/tablet/yaht-belle-anna-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/yaht-belle-anna-x1.jpg 1x,
+                    ./img/mobile/yaht-belle-anna-x2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="yachts-img"
+                  src="./img/desktop_1440/yaht-belle-anna-x1.jpg"
+                  alt="BELLE ANNA"
+                  width="360"
+                />
+              </picture>
+              <div class="container-discr-yachts">
+                <h3 class="container-discr-yachts-subtitle">BELLE ANNA</h3>
+                <p class="container-discr-yachts-text">LUXURY YAHTS</p>
+              </div>
+              <div class="decor-div"></div>
+              <div class="container-list-our-yachts">
+                <ul class="list-class-our-yachts">
+                  <li class="list-class-our-yachts-item">LENGTH</li>
+                  <li class="list-class-our-yachts-item">SHIPYARD</li>
+                  <li class="list-class-our-yachts-item">BUILT</li>
+                  <li class="list-class-our-yachts-item">GUESTS</li>
+                  <li class="list-class-our-yachts-item">PRICE</li>
+                </ul>
+                <ul class="list-class-our-yachts">
+                  <li class="list-class-yachts-item">50m(155ft)</li>
+                  <li class="list-class-yachts-item">ISA</li>
+                  <li class="list-class-yachts-item">2012</li>
+                  <li class="list-class-yachts-item">12 in 6 cabins</li>
+                  <li class="list-class-yachts-item">€21,000,000</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a class="button-link-yahts" href="#rental">Yacht rental</a>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container-advantages container">
+          <h2 class="visually-hidden">Advantages</h2>
+          <div class="list-of-advantages">
+            <ul class="advantages-list">
+              <li class="advantages-list-item">
+                <h3 class="advantages-title">01</h3>
+                <div class="line"></div>
+                <p class="advantages-txt">
+                  Swimming and water sports: try your hand at water skiing.
+                </p>
+              </li>
+              <li class="advantages-list-item">
+                <h3 class="advantages-title">02</h3>
+                <div class="line"></div>
+                <p class="advantages-txt">
+                  Fishing: try to catch your own dinner.
+                </p>
+              </li>
+              <li class="advantages-list-item">
+                <h3 class="advantages-title">03</h3>
+                <div class="line"></div>
+                <p class="advantages-txt">
+                  Sightseeing tours: take a shore or island tour, enjoy the
+                  views and sunsets from the water.
+                </p>
+              </li>
+              <li class="advantages-list-item">
+                <h3 class="advantages-title">04</h3>
+                <div class="line"></div>
+                <p class="advantages-txt">
+                  Rest and relaxation: read a book or listen to music while
+                  enjoying the outdoor atmosphere.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <picture class="picture-adv">
+            <source
+              media="(min-width:1440px )"
+              srcset="
+                ./img/desktop_1440/advantages-x1.jpg 1x,
+                ./img/desktop_1440/advantages-x2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/desktop_1280/advantages-x1.jpg 1x,
+                ./img/desktop_1280/advantages-x2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/tablet/advantages-x1.jpg 1x,
+                ./img/tablet/advantages-x2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/mobile/advantages-x1.jpg 1x,
+                ./img/mobile/advantages-x2.jpg 2x
+              "
+            />
+            <img
+              class="advantages-photo"
+              src="./img/tablet/advantages-x1.jpg"
+              alt="yacht"
+              width="704"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="rent-page" id="rental">
+        <div class="container">
+          <div class="article-form-div">
+            <div class="no-image-class">
+              <h2 class="rent-a-yacht-article">Rent a yacht now</h2>
+              <form class="form-rent">
+                <div class="form-rent-input">
+                  <label for="user-name">
+                    <input
+                      class="input-class-window"
+                      id="user-name"
+                      name="user-name"
+                      type="text"
+                      placeholder="Full Name"
+                      required
+                      pattern="[A-Za-zА-Яа-яЁёІіЇїЄє'`ґҐ\s-]+"
+                      minlength="2"
+                      maxlength="50"
+                    />
+                  </label>
+                  <label for="user-email">
+                    <input
+                      class="input-class-window"
+                      id="user-email"
+                      name="user-email"
+                      type="email"
+                      pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                      required
+                      placeholder="Email"
+                    />
+                  </label>
+
+                  <label for="user-phone">
+                    <input
+                      class="input-class-window"
+                      id="user-phone"
+                      name="user-phone"
+                      pattern="^+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+                      type="tel"
+                      placeholder="Phone number"
+                      required
+                    />
+                  </label>
+                  <label for="user-comment">
+                    <textarea
+                      id="user-comment"
+                      name="user-comment"
+                      class="textarea-class"
+                      placeholder="Comment"
+                    ></textarea>
+                  </label>
+                </div>
+
+                <button class="button-rent" type="submit">Send</button>
+              </form>
+            </div>
+            <picture>
+              <source
+                media="(min-width:1440px )"
+                srcset="
+                  ./img/desktop_1440/yaht-rent-x1.jpg 1x,
+                  ./img/desktop_1440/yaht-rent-x2.jpg 2x
+                "
+              />
+              <source
+                media="(min-width:1280px )"
+                srcset="
+                  ./img/desktop_1280/yaht-rent-x1.jpg 1x,
+                  ./img/desktop_1280/yaht-rent-x2.jpg 2x
+                "
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  ./img/tablet/yaht-rent-x1.jpg 1x,
+                  ./img/tablet/yaht-rent-x2.jpg 2x
+                "
+              />
+              <source
+                media="(max-width:767px )"
+                srcset="
+                  ./img/mobile/yaht-rent-x1.jpg 1x,
+                  ./img/mobile/yaht-rent-x2.jpg 2x
+                "
+              />
+              <img
+                class="img-rent"
+                src="./img/desktop_1440/yaht-rent-x1.jpg"
+                alt="Yacht"
+                width="768"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container reviews-container">
+          <h2 class="reviews-title">
+            YachtJet take pride in providing the best possible service and
+            experience to our customers
+          </h2>
+          <p class="reviews-text">
+            Our customers have enjoyed unforgettable moments on our yachts.
+            Don't just take our word for it - read on to find out what they have
+            to say about their journey with us.
+          </p>
+          <ul class="reviews-list">
+            <li class="reviews-items item-one">
+              <div class="reviews-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/reviews/image-john-1-desc-1440-x1.jpg 1x,
+                      ./img/reviews/image-john-2-desc-1440-x2.jpg 2x
+                    "
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/image-john-1-desc-1280-x1.jpg 1x,
+                      ./img/reviews/image-john-2-desc-1280-x2.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/image-john-1-tab-x1.jpg 1x,
+                      ./img/reviews/image-john-2-tab-x2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/image-john-1-mob-x1.jpg 1x,
+                      ./img/reviews/image-john-2-mob-x2.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./img/reviews/image-john-mob-x1.jpg"
+                    alt="John Wax"
+                    width="56"
+                    height="56"
+                    class="reviews-image"
+                  />
+                </picture>
+
+                <h3 class="reviews-subtitle">John Wax</h3>
+                <p class="reviews-feedback">
+                  I rented the Lagoon 620 with my family for a week-long
+                  vacation and it was the best decision ever. The yacht was
+                  spacious, comfortable, and luxurious, and the crew took care
+                  of everything.
+                </p>
+              </div>
+            </li>
+            <li class="reviews-items item-two">
+              <div class="reviews-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/reviews/image-victoria-1-desc-1440-x1.jpg 1x,
+                      ./img/reviews/image-victoria-2-desc-1440-x2.jpg 2x
+                    "
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/image-victoria-1-desc-1280-x1.jpg 1x,
+                      ./img/reviews/image-victoria-2-desc-1280-x2.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/image-victoria-1-tab-x1.jpg 1x,
+                      ./img/reviews/image-victoria-2-tab-x2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/image-victoria-1-mob-x1.jpg 1x,
+                      ./img/reviews/image-victoria-2-mob-x2.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./img/reviews/image-victoria-1mob-x1.jpg"
+                    alt="Victoria Romashenko"
+                    width="56"
+                    height="56"
+                    class="reviews-image"
+                  />
+                </picture>
+
+                <h3 class="reviews-subtitle">Victoria Romashenko</h3>
+                <p class="reviews-feedback">
+                  The Sunseeker Manhattan 66 was the perfect choice for our
+                  romantic getaway. The yacht was beautifully designed, with all
+                  the amenities we needed, and the crew was attentive and
+                  friendly.
+                </p>
+              </div>
+            </li>
+            <li class="reviews-items item-three">
+              <div class="reviews-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/reviews/image-ihor-1-desc-1440-x1.jpg 1x,
+                      ./img/reviews/image-ihor-2-desc-1440-x2.jpg 2x
+                    "
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/image-ihor-1-desc-1280-x1.jpg 1x,
+                      ./img/reviews/image-ihor-2-desc-1280-x2.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/image-ihor-1-tab-x1.jpg 1x,
+                      ./img/reviews/image-ihor-2-tab-x2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/image-ihor-1-mob-x1.jpg 1x,
+                      ./img/reviews/image-ihor-2-mob-x2.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./img/reviews/image-ihor-1-mob-x1.jpg"
+                    alt="Ihor Trachuk"
+                    width="56"
+                    height="56"
+                    class="reviews-image"
+                  />
+                </picture>
+
+                <h3 class="reviews-subtitle">Ihor Trachuk</h3>
+                <p class="reviews-feedback">
+                  The Azimut 80 was the most luxurious yacht I've ever been on.
+                  The cabins were spacious and elegant, and the outdoor areas
+                  were perfect for relaxing and entertaining. Worth every penny!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-page">
+      <div class="container footer-container">
+        <div class="footer-box">
+          <div class="footer-nav-box">
+            <nav class="footer-nav">
+              <a class="footer-logo" href="./index.html">yachtjet</a>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a class="footer-nav-link" href="#about">About</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a class="footer-nav-link" href="#yachts">Yachts</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a class="footer-nav-link" href="#reviews">Reviews</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="footer-soc-list">
+              <li class="footer-soc-list-item">
+                <a
+                  class="footer-soc-link"
+                  href="https://www.instagram.com/goitclub/"
+                  target="_blank"
+                  ><svg class="footer-soc-icon" width="19" height="19">
+                    <use href="/img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-list-item">
+                <a
+                  class="footer-soc-link"
+                  href="https://www.youtube.com/c/GoIT"
+                  target="_blank"
+                  ><svg class="footer-soc-icon" width="19" height="19">
+                    <use href="/img/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-list-item">
+                <a
+                  class="footer-soc-link"
+                  href="https://www.facebook.com/goITclub/"
+                  target="_blank"
+                  ><svg class="footer-soc-icon" width="19" height="19">
+                    <use href="/img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer-page-text">
+            No matter which yacht you choose, our experienced crew will ensure
+            that your journey is smooth and enjoyable.
+          </p>
+          <div class="footer-bottom">
+            <p class="footer-copyright">2023. Yacht Adventures</p>
+            <a class="footer-link-privacy" href="" target="_blank"
+              >Privacy Police</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mob-menu js-menu-container" id="mobile-menu">
+      <div class="mob-menu-head">
+        <a class="mob-menu-logo" href="./index.html">yachtjet</a>
+        <button type="button" class="close-btn js-close-menu">
+          <svg class="close-icon" width="24" height="24">
+            <use href="/img/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="#about" class="mob-menu-link">ABOUT</a>
+          </li>
+          <li>
+            <a href="#yachts" class="mob-menu-link">YACHTS</a>
+          </li>
+          <li>
+            <a href="#reviews" class="mob-menu-link">REVIEWS</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mob-soc-list">
+        <li>
+          <a
+            class="mob-soc-list-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+          >
+            <svg class="mob-soc-icon" width="19" height="19">
+              <use href="/img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="mob-soc-list-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+          >
+            <svg class="mob-soc-icon" width="20" height="20">
+              <use href="/img/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="mob-soc-list-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+          >
+            <svg class="mob-soc-icon" width="20" height="20">
+              <use href="/img/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/menu.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
